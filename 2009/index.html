@@ -20,11 +20,21 @@
         }
 
         .profile-card {
-            background: #333;
+            background: red;
             padding: 20px;
             border-radius: 10px;
             display: inline-block;
             text-align: center;
+            animation: colorChange 5s infinite alternate; /* Add animation */
+        }
+
+        @keyframes colorChange {
+            0% {
+                background-color: red;
+            }
+            100% {
+                background-color: blue;
+            }
         }
 
         .profile-card img {
